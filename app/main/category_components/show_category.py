@@ -155,8 +155,8 @@ class ShowCategory(tk.Canvas, TreeEssentials):
             self.tree.insert("",
                              tk.END,
                              values=(
-                                 "No Records Found",
-                                 "No Records Found", 
+                                 "No Reco....",
+                                 "No Reco....", 
                                  "No Records Found"
                                  ),
                              tags=("odd_row",)

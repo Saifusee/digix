@@ -1,0 +1,6 @@
+# # Mail Constants
+
+# APP_SMTP_SERVER = 
+# APP_SMTP_PORT = 
+# APP_SMTP_MAIL_SENDER_MAIL_ID =   
+# APP_SMTP_MAIL_PASSWORD = 

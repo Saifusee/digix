@@ -1,0 +1,3 @@
+__digix_venv__/
+mail/mail_config.py
+database/db_config.py

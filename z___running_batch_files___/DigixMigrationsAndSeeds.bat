@@ -1,0 +1,1 @@
+cd.. &&  __digix_venv__\Scripts\activate.bat && cd migrations_and_seeds && python db_index.py

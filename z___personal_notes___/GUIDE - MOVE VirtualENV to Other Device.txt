@@ -1,0 +1,29 @@
+
+# How to install virtual environment package 
+   pip instal virtualenv
+# How to create virtual environment
+   python -m venv environment_name_here
+
+
+## In older PC
+1) -----------------> workon [environment_name]
+2) pip freeze > requirements.txt
+
+## Now requirements.txt is created in project folder
+) copy requirements.txt to other PC
+
+
+## On the other PC:
+1) create a virtual environment using 
+         python -m venv environment_name_here
+5) ----------------->  workon [environment_name]
+6) (In windows) 
+	pip install -r requirements.txt
+   (In Linux)
+	pip install --trusted-host pypi.pythonorg -r requirements.py
+
+
+####### In Linux each pip command should have --trusted-host pypi.pythonorg before package name, because server change of pip
+####### is not updated in ubuntu so we have to give direction to server
+####### Example: pip install --trusted-host pypi.pythonorg Package_name
+####### Example: pip install --trusted-host pypi.pythonorg Pillow

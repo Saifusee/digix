@@ -1,0 +1,15 @@
+1) CHANGE ICON IMAGE 
+pyinstaller --icon=icon.ico myscript.py
+
+2) BUNDLE USER FRIENDLY PYTHON SOFTWARE
+pyinstaller index.py --name DigiX --icon="./assets/favicon.ico" --add-data "assets;assets" --noconfirm --hidden-import=babel.numbers --windowed
+
+
+	a) pyinstaller => package name
+	b) index.py => main file name to be created as executable file for standalone application
+	c) --name => Give custom name to executable, in my case index.py to DigiX
+	c) --add-data => flag to use multimedia
+	d) assets;assets => multimedia folder location in project, semicolon is multiple separator for windows, then again new assets is location of assets in executable folder
+	e) --no-confirm => this flag means don't ask me yes or no for overriting build and dist folder
+	f) --hidden-import=babel.numbers => importing babel.numbers, it is required in our applicatin for some reasons and maybe in tkcalender buut it had to be imported in pyinstaller conversion or else we get errors
+	g) --icon = flag direct towards icon image in current directory for software logo

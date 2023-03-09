@@ -1,0 +1,1 @@
+cd.. && __digix_venv__\Scripts\activate.bat && python index.py

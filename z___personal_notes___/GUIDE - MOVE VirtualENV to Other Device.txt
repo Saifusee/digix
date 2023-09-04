@@ -1,12 +1,27 @@
-
+## Note our app work on 3.10.7 not higher than this
 # How to install virtual environment package 
    pip instal virtualenv
+
 # How to create virtual environment
    python -m venv environment_name_here
 
+# How to create virtual environment (with specific python version in our case
+# Python 3.10.7, first it needed to be installed in system the run this command)
+   py -3.10 -m venv environment_name_here (3.10.7 not working)
+   or
+   python -m venv -p D:\app_install\python310\python.exe environment_name_here
+   or 
+   D:\App_Installed\Python3107\python.exe -m venv __digix_venv__
+
+[Note: -m option: This option is used with the python command to run a module as a standalone script.]
+[Note: -p option: This option is specific to the venv module in Python. It is used to specify the Python interpreter 
+or executable to be used within the virtual environment being created.]
+[Note:The py command is a utility provided by the Python Launcher for Windows. It allows you to specify a specific 
+version of Python to run when you have multiple versions installed on your system.]
+
 
 ## In older PC
-1) -----------------> workon [environment_name]
+1) -----------------> work on [environment_name]
 2) pip freeze > requirements.txt
 
 ## Now requirements.txt is created in project folder
@@ -19,6 +34,7 @@
 5) ----------------->  workon [environment_name]
 6) (In windows) 
 	pip install -r requirements.txt
+	[ the -r flag stands for "requirements file". It is used to specify a file that contains a list of package requirements.]
    (In Linux)
 	pip install --trusted-host pypi.pythonorg -r requirements.py
 

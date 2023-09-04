@@ -31,9 +31,9 @@ class CreateSalesOrder(ttk.Frame, Base):
         self.columnconfigure(1, weight=1)
         
 
-        self.frame_left = ttk.Frame(self)
+        self.frame_left = ttk.Frame(self, width=200)
         self.frame_left.grid(row=1, column=0, sticky="nsew", pady=(15), padx=(20))
-        self.frame_right = ttk.Frame(self, width=600)
+        self.frame_right = ttk.Frame(self, width=450)
         self.frame_right.grid(row=1, column=1, sticky="nsew", pady=(15), padx=(20))
         self.frame_right.grid_propagate (False)
         
@@ -53,21 +53,21 @@ class CreateSalesOrder(ttk.Frame, Base):
         lb_1 = ttk.Label(self.frame_left, text="Customer Name: {}".format(self.superscript("*")), style="LoginLabel.TLabel")
         lb_1.grid(row=1, column=0, sticky="w")
         
-        self.customer_name_entry = ttk.Entry(self.frame_left, width=50,  textvariable=self.customer_name_data, font=("TkdefaultFont", 10, "bold"))
+        self.customer_name_entry = ttk.Entry(self.frame_left, width=30,  textvariable=self.customer_name_data, font=("TkdefaultFont", 10, "bold"))
         self.customer_name_entry.grid(row=1, column=1, padx=(10,10), pady=(10,10))
         self.bindFormFields(self.customer_name_entry, self.validate_input)
         
         lb_2 = ttk.Label(self.frame_left, text="Customer Mobile Number: {}".format(self.superscript("*")), style="LoginLabel.TLabel")
         lb_2.grid(row=2, column=0, sticky="w")
         
-        self.customer_mobile_entry = ttk.Entry(self.frame_left, width=50,  textvariable=self.customer_mobile_data, font=("TkdefaultFont", 10, "bold"))
+        self.customer_mobile_entry = ttk.Entry(self.frame_left, width=30,  textvariable=self.customer_mobile_data, font=("TkdefaultFont", 10, "bold"))
         self.customer_mobile_entry.grid(row=2, column=1, padx=(10,10), pady=(10,10))
         self.bindFormFields(self.customer_mobile_entry, self.validate_input)
 
         lb_3 = ttk.Label(self.frame_left, text="Customer E-mail: ", style="LoginLabel.TLabel")
         lb_3.grid(row=3, column=0, sticky="w")
         
-        self.customer_email_entry = ttk.Entry(self.frame_left, width=50,  textvariable=self.customer_email_data, font=("TkdefaultFont", 10, "bold"))
+        self.customer_email_entry = ttk.Entry(self.frame_left, width=30,  textvariable=self.customer_email_data, font=("TkdefaultFont", 10, "bold"))
         self.customer_email_entry.grid(row=3, column=1, padx=(10,10), pady=(10,10))
         self.bindFormFields(self.customer_email_entry, self.validate_input)
 
@@ -78,7 +78,7 @@ class CreateSalesOrder(ttk.Frame, Base):
             self.frame_left,
             textvariable=self.payment_mode_data,
             valueList=self.payment_mode_option_list, 
-            width=50,
+            width=30,
             font=("TkdefaultFont", 10, "bold"),
             justify="center",
             style="ShowProduct.TCombobox",

@@ -32,7 +32,7 @@ Getting started with **Digix - Migration and Seeds** is a breeze:
 
 2. **Clone:** Clone this repository to your local machine.
 
-3. **Configuration:** Configure your database connection details in `db_config.py`.
+3. **Configuration:** Configure your database connection details in `../database/db_config.py`.
 
 4. **Execute:** Run `python db_index.py` in your terminal.
 

@@ -73,5 +73,5 @@ We welcome contributions from passionate individuals who share our vision. Wheth
 ---
 
 <p align="center">
-  Crafted with precision by Mohd Saiful Haque Khan (https://github.com/yourusername)
+  Crafted with precision by Mohd Saiful Haque Khan (https://github.com/saifusee)
 </p>
